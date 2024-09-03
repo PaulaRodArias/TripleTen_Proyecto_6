@@ -4,9 +4,9 @@ import streamlit as st
         
 st.header('Análisis exploratorio de datos - Modelos de autos')
 
-car_data = pd.read_csv(r'C:\Users\Lenovo\Desktop\TripleTen\Proyectos_Tripleten\Proyecto_Sprint6\TripleTen_Proyecto_6\vehicles_us.csv') # leer los datos
-hist_button = st.button('Construir histograma') # crear un botón
-scat_button = st.button('Construir gráfico de dispersión')
+car_data = pd.read_csv('vehicles_us.csv') # leer los datos
+hist_button = st.button('Construir histograma') # crear un botón hist
+scat_button = st.button('Construir gráfico de dispersión') #diagrama de dispersión  
 
 if hist_button: # al hacer clic en el botón
     # escribir un mensaje
